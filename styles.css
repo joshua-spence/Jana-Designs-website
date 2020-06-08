@@ -4,14 +4,16 @@
     box-sizing: border-box;
 }
 
-html{
-    overflow-y: hidden;
-}
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #f7f7f7;
     color: #3f3f44;
+    width: 100%;
+    scroll-behavior: smooth;
 
 }
 nav{
@@ -50,6 +52,8 @@ nav{
     left: 12%;
     z-index: -1;
 
+    
+
 }
 
 
@@ -60,18 +64,42 @@ nav{
     color: #3f3f44;
 }
 
-.project1{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: minmax(231px, 331px);
-    grid-template-rows: minmax(325px, 425px);
-    position: relative;
-    bottom: -600px;
-
+/* add a media query to decrease the valaue of left when it reaches a specific width.   */
+.group1{
+    position: absolute;
+    display: inline-block;
+    top: 11vh;
+    left: 33.555vw;
 }
 
-.photos{
+.group2{
+    position: absolute;
+    display: inline-block;
+    top: 11vh; 
+    left: 33.555vw;  
+}
+
+.group3{
+    position: absolute;
+    display: inline-block; 
+    top: 11vh;  
+    /* Create a media query to decrease the gap when the viewport is shrunk. */
+    left: 33.555vw;
+    
+}
+
+.group1 img{
     width: 100%;
-    height: 100%;
-    box-shadow: 0px 1px 54px -25px rgba(0,0,0,0.75);
+    height: auto;
+}
+
+.group2 img{
+    width: 100%;
+    height: auto;
+}
+
+.group3 img{
+    width: 100%;
+    height: auto;
+    margin-right: 35.5vw;
 }

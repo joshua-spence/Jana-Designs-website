@@ -1,55 +1,39 @@
-//Load effect, picture slides up from the bottom of the screen.
-var photoContainer = document.querySelector('.project1');
 
-window.addEventListener('load', slideUp);
+//First code structure for horizontal scroll
+var firstImage = document.querySelector('.group1');
+var secImage = document.querySelector('.group2');
+var thirdImage = document.querySelector('.group3');
 
-photoContainer.style.bottom = '-800px';
+//This function adjusts the gap between photos when the window screen is resized
+window.addEventListener("resize", () =>{
 
-function slideUp(){
-    if (parseInt(photoContainer.style.bottom) <= -360){
-        photoContainer.style.position = 'relative';
-        photoContainer.style.bottom = parseInt(photoContainer.style.bottom) + 10 + 'px';
+    var imgGap = screen.width - (screen.width - window.innerWidth);
+    var widthResize = (screen.width -window.innerWidth) * -0.022;
+    var heightResize = (screen.height - window.innerHeight) * 0.02;
 
-        setTimeout(slideUp, 10);
-    }
+    //Decreases or increases the size of the gap between each image bases on the width of the screen.
+    secImage.style.transform = `translateX(${imgGap}px)`;
+    thirdImage.style.transform = `translateX(${imgGap * 2}px)`;
 
-    else if (parseInt(photoContainer.style.bottom)>= -360 && parseInt(photoContainer.style.bottom) <= -160){
-        photoContainer.style.position = 'relative';
-        photoContainer.style.bottom = parseInt(photoContainer.style.bottom) + 8 + 'px';
+    //When shrinking the height of the viweport it keeps the image centered
+    firstImage.style.left = `${33.5 + heightResize}vw`;
+    secImage.style.left = `${33.5 + heightResize}vw`;
+    thirdImage.style.left = `${33.5 + heightResize}vw`;
+});
 
-        setTimeout(slideUp,12);
-    }
-
-    else if(parseInt(photoContainer.style.bottom) >= -160 && parseInt(photoContainer.style.bottom) <= -60){
-        photoContainer.style.position = 'relative';
-        photoContainer.style.bottom = parseInt(photoContainer.style.bottom) + 6 + 'px';
-
-        setTimeout(slideUp, 14);
-
-    }
-    else if (parseInt(photoContainer.style.bottom) >= -60 && parseInt(photoContainer.style.bottom) <= -30) {
-        photoContainer.style.position = 'relative';
-        photoContainer.style.bottom = parseInt(photoContainer.style.bottom) + 4 + 'px';
-
-        setTimeout(slideUp, 16);
-
-    }
-    
-
-}
 
 // Transitions through the photos 
-var myIndex = 0;
-carousel();
+// var myIndex = 0;
+// carousel();
 
-function carousel(){
-    var i;
-    var x = document.getElementsByClassName("photos");
-    for(i = 0; i < x.length; i++){
-        x[i].style.display = "none";
-    }
-    myIndex++;
-    if(myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 900);    
-}
+// function carousel(){
+//     var i;
+//     var x = document.getElementsByClassName("photos");
+//     for(i = 0; i < x.length; i++){
+//         x[i].style.display = "none";
+//     }
+//     myIndex++;
+//     if(myIndex > x.length) {myIndex = 1}
+//     x[myIndex-1].style.display = "block";
+//     setTimeout(carousel, 900);    
+// }
