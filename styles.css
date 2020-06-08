@@ -16,34 +16,58 @@ body{
     scroll-behavior: smooth;
 
 }
-nav{
-    display: flex;
-    align-items: center;
-    min-height: 8vh;
-    padding: 0px 30px;
-    background-color: #f7f7f7;
 
+.top-left{
+    top: 1em;
+    left: 1em;
+    width: 150px;
+    height: 50px;
+    position: fixed;
 }
 
-.nav-links{
-    display: flex;
-    background-color: #f7f7f7;;
-    justify-content: space-between;
-    width: 100%;
-
-}
-
-.nav-links li{
-    list-style: none;
-}
-
-.nav-links a{
-    color: #3f3f44;
+.top-left a{
+    padding: 10px;
     text-decoration: none;
-    letter-spacing: 3px;
+    color: #3f3f44;
+    font-size: 0.7em;
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 10px;
+    
 }
+
+.bottom-left{
+    bottom: 1em;
+    left: 1em;
+    width: 130px;
+    height: 50px;
+    position: fixed;
+}
+
+.bottom-left a{
+    text-decoration: none;
+    color: #3f3f44;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bottom-right{
+    bottom: 1em;
+    right: 1em;
+    width: 130px;
+    height: 50px;
+    position: fixed;
+}
+
+.bottom-right a{
+    padding: 20px 10px;
+    text-decoration: none;
+    color: #3f3f44;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 .main-heading{
     display: grid;
@@ -51,15 +75,15 @@ nav{
     top: 40%;
     left: 12%;
     z-index: -1;
-
+    position: fixed;
     
 
 }
 
 
 .main-heading h1{
-    letter-spacing: -5px;
-    font-size: 7vw;
+    letter-spacing: 1px;
+    font-size: 6vw;
     font-weight: 900;
     color: #3f3f44;
 }
