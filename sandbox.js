@@ -22,6 +22,11 @@ window.addEventListener("resize", () =>{
 });
 
 
+gsap.from('.collection', {opacity: 1, duration: 1, delay: 1, y:'100vh'});
+gsap.from('span', {opacity: 0, duration: 3, delay: 2});
+
+
+
 // Transitions through the photos 
 // var myIndex = 0;
 // carousel();

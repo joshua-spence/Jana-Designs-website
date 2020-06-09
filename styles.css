@@ -14,7 +14,10 @@ body{
     color: #3f3f44;
     width: 100%;
     scroll-behavior: smooth;
+}
 
+#background{
+    background-color: crimson;
 }
 
 .top-left{
@@ -97,7 +100,7 @@ body{
     position: absolute;
     display: inline-block;
     top: 11vh;
-    left: 33.555vw;
+    left: 32.555vw;
 }
 
 .group2{
