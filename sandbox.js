@@ -26,6 +26,32 @@ gsap.from('.collection', {opacity: 1, duration: 1, delay: 1, y:'100vh'});
 gsap.from('span', {opacity: 0, duration: 3, delay: 2});
 
 
+function enterAnimation() {
+    const tl = gasp.timeline();
+    tl.to('.home', {   
+        opacity: 0,
+        duration: 1
+    });
+
+    tl.from('.project1', {
+        y: '100vh',
+        duration: 1
+    }, '-=0.3');
+
+
+
+}
+
+barba.init({
+    transitions: [{
+        enter(){
+            enterAnimation() 
+        }
+    }]
+});
+
+
+
 
 // Transitions through the photos 
 // var myIndex = 0;
