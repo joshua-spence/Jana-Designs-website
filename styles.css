@@ -20,20 +20,20 @@ body{
 
 .logo-top-left{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-self: center;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 85px;
     position: fixed;
     background-color: white;
     z-index: 2;
 }
 
 .logo-top-left img{
-    width: 17vh;
-    height: 13vh;
+    padding: 5px;
+    width: 18vh;
 }
 
 .logo-top-left a{
@@ -46,7 +46,7 @@ body{
     justify-content: center;
     bottom: 1em;
     left: 1em;
-    width: 15vw;
+    width: 23vh;
     z-index: 2;
     position: fixed;
    
@@ -55,8 +55,8 @@ body{
 /* text inside of parent div  */
 .portfolio-bottom-left a{
     text-decoration: none;
-    color: black;
-    font-size: 2vw;
+    color: #4a4a49;
+    font-size: 3vh;
     padding: 5px;
     text-transform: uppercase;
     font-weight: normal;
@@ -67,7 +67,7 @@ body{
     justify-content: center;
     bottom: 1em;
     right: 1em;
-    width: 18vw;
+    width: 23vh;
     z-index: 2;
     position: fixed;
 
@@ -76,8 +76,8 @@ body{
 /* text inside of parent div  */
 .contactMe-bottom-right a{
     text-decoration: none;
-    color: black;
-    font-size: 2vw;
+    color: #4a4a49;
+    font-size: 3vh;
     padding: 5px 6px;
     text-align: center;
     text-transform: uppercase;
@@ -86,16 +86,17 @@ body{
 
 }
 
-
-
 .swiper-button-prev{
     color: rgba(199, 199, 199, 0.699) !important;
     padding-left: 2em;
+    outline: none !important
 }
 
 .swiper-button-next{
+
     color: rgba(204, 204, 204, 0.616) !important;
     padding-right: 2em;
+    outline: none !important
 }
 
 
@@ -107,8 +108,11 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 49px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 49px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 49px -20px rgba(0,0,0,0.75);
 }
+
 
 .landing-photo-link img{
     width: 100%;
@@ -123,44 +127,27 @@ body{
     text-align: center;
     font-style: italic;
     font-weight: normal;
-    font-size: 10vh;
-    right: 3em;
+    font-size: 6vh;
+    right: 4em;
     z-index: 2;
-    color: black;
+    color: #363636;
 
 }
 
-/* @media only screen and (max-width: 720px){
-    .swiper-project-slide{
-        width: 180px;
-        height: 280px;
+@media only screen and (max-width: 510px){
+    .landing-photo-link{
+        width: 35vh;
     }
 
     .landing-title{
-        font-size: 1.3rem;
-        right: 40px;
+        font-size: 4vh;
+        right: 3em;
     }
 
-    .logo-top-right{
-        font-size: 0.6em;
-        width: 70px;
-        height: 10px;
-    }
-
-    .aboutMe-bottom-left{
-        font-size: 0.6em;
-        width: 70px;
-        height: 10px;
-    }
-
-    .contactMe-bottom-right{
-        font-size: 0.6em;
-        width: 70px;
-        height: 10px;
-    }
+    
 
 
-} */
+}
 
 /* project pages  */
 
@@ -183,7 +170,7 @@ body{
 .content-title{
     visibility: hidden;
     font-family: 'Playfair Display', serif;
-    color: black;
+    color: #363636;
     text-align: left;
     text-transform: uppercase;
     font-size: 1.3em;
@@ -195,7 +182,7 @@ body{
     visibility: hidden;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
-    line-height: 1.5em;
+    line-height: 2em;
     color: rgb(94, 94, 94);
 }
 
@@ -452,20 +439,19 @@ body{
 .next-project-button{
     display: flex;
     justify-content: center;
-    width: 19vw;
-    bottom: 1em;
-    border-radius: 50px;
-    background-color: black;
+    width: 27vh;
+    position: relative;
     margin: 0 auto;
+    top: 1.5em;
 
 }
 
 .next-project-button a{
-    color: white;
+    color: #363635;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: normal;
-    font-size: 2vw;
+    font-size: 3vh;
     padding: 5px;
 }
 
@@ -482,13 +468,14 @@ body{
 }
 
 .item{
+    visibility: hidden;
     width: 100%;
     text-align: center;
 }
 
 .item a{
     text-decoration: none;
-    color: black;
+    color: #363635;;
 }
 
 .item h2{
@@ -496,7 +483,7 @@ body{
     font-style: italic;
     text-transform: uppercase;
     letter-spacing: 10px;
-    font-size: 2em;
+    font-size: 4vw;
 }
 
 @media only screen and (max-width: 580px){
@@ -505,9 +492,6 @@ body{
         grid-template-columns: minmax(150px,260px);
     }
 
-    .item h2{
-        font-size: 1em;
-    }
 
 }
 
