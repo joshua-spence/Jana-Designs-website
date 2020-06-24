@@ -46,6 +46,16 @@ gsap.from(".wrapper", {
     duration: 0.9,
 });
 
+gsap.from(".wrapper-2", {
+    scrollTrigger: {
+        trigger: ".wrapper-2",
+        toggleActions: "play none play none"
+    },
+    x: -200,
+    autoAlpha:0,
+    opacity: 1,
+    duration: 0.9,
+});
 
 
 
