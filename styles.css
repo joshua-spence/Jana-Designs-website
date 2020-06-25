@@ -41,50 +41,6 @@ body{
     padding: 5px;
 }
 
-.portfolio-bottom-left{
-    display: flex;
-    justify-content: center;
-    bottom: 1em;
-    left: 1em;
-    width: 23vh;
-    z-index: 2;
-    position: fixed;
-   
-}
-
-/* text inside of parent div  */
-.portfolio-bottom-left a{
-    text-decoration: none;
-    color: #4a4a49;
-    font-size: 3vh;
-    padding: 5px;
-    text-transform: uppercase;
-    font-weight: normal;
-}
-
-.contactMe-bottom-right{
-    display: flex;
-    justify-content: center;
-    bottom: 1em;
-    right: 1em;
-    width: 23vh;
-    z-index: 2;
-    position: fixed;
-
-}
-
-/* text inside of parent div  */
-.contactMe-bottom-right a{
-    text-decoration: none;
-    color: #4a4a49;
-    font-size: 3vh;
-    padding: 5px 6px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: normal;
-    pointer-events: auto;
-
-}
 
 .swiper-button-prev{
     color: rgba(199, 199, 199, 0.699) !important;
@@ -164,6 +120,7 @@ body{
 .text-containers{
     position: relative;
     width: 60%;
+    padding: 2em 0em;
     margin: 0 auto;
 }
 
@@ -359,7 +316,7 @@ body{
 }
 
 .table-2{
-    max-width: 40%;
+    max-width: 70%;
     align-self: end;
     justify-self: end;
 }
@@ -369,7 +326,7 @@ body{
 }
 
 .table-3{
-    max-width: 50%;
+    max-width: 80%;
     align-self: start;
     justify-self: end;
 }
