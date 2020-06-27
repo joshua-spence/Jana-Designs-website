@@ -72,4 +72,7 @@ gsap.from(".center-images", {
 
 // };
 
-gsap.from('.item', {autoAlpha:0, opacity:0, y:-100, duration:1.5});
+
+//Contact-me page animation 
+
+gsap.from('.item', {autoAlpha:0, opacity:0, y:50, duration:1});

@@ -30,7 +30,7 @@ a {
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Old Standard TT', 'Playfair Display', serif;
     font-weight: bold;
     color: #363636;
   }
@@ -44,7 +44,7 @@ a {
     display: block;
     float: left;
     font-size: 2em;
-    padding: 3px 20px;
+    padding: 2px 20px;
     text-decoration: none;
   }
   
@@ -126,6 +126,7 @@ a {
     }
     .header li a {
       padding: 20px 30px;
+      font-family: 'Old Standard TT', serif;
     }
     .header .menu {
       clear: none;

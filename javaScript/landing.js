@@ -3,6 +3,10 @@ var mySwiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 
   loop: true,
 });
@@ -33,7 +37,7 @@ if(localStorage.getItem('activeIndex')){
 //when page loads the gsap animations will be executed 
 window.onload = function(){
   gsap.from('.landing-title', {autoAlpha: 0, x:-50, duration:0.5, delay:1});
-  gsap.from('.landing-photo-link', {autoAlpha:0, y:200, duration:1, delay: 0.2});
+  gsap.from('.landing-photo-link', {autoAlpha:0, y:'100vh', duration:1, delay: 0.2, easeOut:'ExpoOut'});
   gsap.from('.logo-top-left', {y:50, duration:1.2});
   gsap.from('.portfolio-bottom-left', {opacity:0, y:20, duration:1});
   gsap.from('.contactMe-bottom-right', {opacity:0, y:20, duration:1});
